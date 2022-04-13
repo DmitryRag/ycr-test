@@ -1,0 +1,51 @@
+.tabs {
+
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #4A4A4A;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    max-width: 168px;
+    width: 100vw;
+    border: 1px solid #DFE5EC;
+    box-sizing: border-box;
+}
+
+.btn:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+
+.btn:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:hover {
+    background: #F1FCFF;
+}
+
+.btn_active {
+    background: #2196F3;
+    color: #fff;
+    border-color: #2196F3;
+}
+
+.btn_active.btn:hover {
+    background: #2196F3;
+    color: #fff;
+}

@@ -1,0 +1,21 @@
+.main {
+    padding: 0 103px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__filters {
+    display: flex;
+    flex-direction: column;
+    max-width: 232px;
+    width: 100vw;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 504px;
+    width: 100vw;
+
+}
