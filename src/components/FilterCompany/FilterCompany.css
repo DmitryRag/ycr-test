@@ -1,0 +1,59 @@
+.filter-company {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.filter-company__title {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0 20px 20px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.radio:hover {
+    background: #F1FCFF;
+}
+
+.radio .radio__border {
+    position: relative;
+    border: 1px solid #2196F3;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.radio .radio__indicator {
+    position: absolute;
+    z-index: 1;
+    background-color: #2196F3;
+    margin: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 350ms;
+}
+
+.radio .radio__indicator.checked {
+    transform: scale(1);
+}
+
+.radio .radio__label {
+    color: #4A4A4A;
+    font-size: 13px;
+    line-height: 20px;
+}
