@@ -6,17 +6,17 @@ function Tabs({tabs, setTabs}) {
 
     const btnCheap = classNames(
         'btn', {
-          btn_active: tabs == 'cheap',
+          btn_active: tabs === 'cheap',
     })
 
     const btnFast = classNames(
         'btn', {
-          btn_active: tabs == 'fast',
+          btn_active: tabs === 'fast',
     })
 
     const btnOptimal = classNames(
         'btn', {
-          btn_active: tabs == 'optimal',
+          btn_active: tabs === 'optimal',
     })
 
     return (

@@ -3,29 +3,25 @@ import './FilterCompany.css'
 
 function FilterCompany() {
     const [checked, setChecked] = useState(false)
-    const [sSeven, setSSeven] = useState(false)
-    const [xiamen, setXiamen] = useState(false)
+    const [isS7Selected, setS7Selected] = useState(false)
+    const [isXiamenSelected, setIsXiamenSelected] = useState(false)
     
 
     function handleClick() {
-        if (sSeven === true) {
-            setSSeven(true)
-        } if (sSeven === false) {
-            setSSeven(true)
-        } if (xiamen === true) {
-            setXiamen(true)
-        } if (xiamen === false) {
-            setXiamen(true)
+        if (!isS7Selected) {
+            setS7Selected(true)
+        } if (!isXiamenSelected) {
+            setIsXiamenSelected(true)
         }
         setChecked(!checked)
     }
 
     function handleClickSeven() {
-        setSSeven(!sSeven)
+        setS7Selected(!isS7Selected)
     }
 
     function handleClickXiamen() {
-        setXiamen(!xiamen)
+        setIsXiamenSelected(!isXiamenSelected)
     }
 
     return (
@@ -39,13 +35,13 @@ function FilterCompany() {
             </div>
             <div className='radio'>
                 <div className='radio__border' onClick={handleClickSeven}>
-                    <div className={`radio__indicator ${sSeven ? 'checked' : ''}`}/>
+                    <div className={`radio__indicator ${isS7Selected ? 'checked' : ''}`}/>
                 </div>
                 <div className='radio__label'>S7 Airlines</div>
             </div>
             <div className='radio'>
                 <div className='radio__border' onClick={handleClickXiamen}>
-                    <div className={`radio__indicator ${xiamen ? 'checked' : ''}`}/>
+                    <div className={`radio__indicator ${isXiamenSelected ? 'checked' : ''}`}/>
                 </div>
                 <div className='radio__label'>XiamenAir</div>
             </div>

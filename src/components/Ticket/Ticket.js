@@ -2,12 +2,13 @@ import React from 'react'
 import './Ticket.css'
 import LogoS7 from '../../images/S7 Logo.svg'
 
+
 function Ticket() {
     return (
         <div className='ticket'>
             <div className='ticket__title'>
                 <p className='ticket__price'>13 400 P</p>
-                <img src={LogoS7} className='ticket__airline-logo'/>
+                <img src={LogoS7} alt={'Логотип компании перевозчика'} className='ticket__airline-logo'/>
             </div>
             <div className='ticket__info'>
                 <div className='ticket__date ticket__column'>

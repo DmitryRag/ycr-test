@@ -6,7 +6,7 @@ function TicketsList() {
     return (
         <section>
             <Ticket />
-            <button className='btn__more'>Показать еще 5 билетов!</button>
+            <button className='btn-more'>Показать еще 5 билетов!</button>
         </section>
     )
 }
